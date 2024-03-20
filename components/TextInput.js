@@ -1,4 +1,5 @@
 // file: /components/TextInput.js
+
 const TextInput = ({ value, onChange, placeholder }) => {
   return (
     <input
