@@ -1,36 +1,32 @@
 // file: /prompts/promptUtils.js
-export function getSystemPrompt() {
-  return {
-    role: "system",
-    content: "You are a helpful assistant that specializes in generating creative pet names.",
-  };
-}
 
-export function getUserPrompt(input) {
+// Function to generate a prompt for the "Name Characteristics Generator" MVP
+export function getUserPrompt(name) {
   return {
     role: "user",
-    content: `Generate a creative pet name and short description for a ${input}.`,
+    content: `Generate symbolic meanings and personality traits associated with the name "${name}".`,
   };
 }
 
+// Function to define functions for generating name characteristics
 export function getFunctions() {
   return [
     {
-      name: "generate_pet_name",
-      description: "Generate a pet name for an animal.",
+      name: "generate_name_characteristics",
+      description: "Generate symbolic meanings and personality traits associated with a name.",
       parameters: {
         type: "object",
         properties: {
-          animalPetName: {
+          name: {
             type: "string",
-            description: "The generated pet name for the animal",
+            description: "The name for which characteristics are generated",
           },
-          description: {
+          characteristics: {
             type: "string",
-            description: "The generated explanation of the pet name",
+            description: "The generated symbolic meanings and personality traits",
           },
         },
-        "required": ["animalPetName", "description"]
+        required: ["name", "characteristics"]
       },
     },
   ];
