@@ -4,29 +4,40 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: url('https://m-cdn.phonearena.com/images/articles/372545-image/best-ipad-pro-wallpapers-blue-and-orange-smoke.jpg'); /* Replace 'background-image.jpg' with your actual image file */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 400px; /* Adjust the max-width to your preference */
   padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
 }
 
 .text-input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
 }
 
 .submit-button {
   display: inline-block;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
   color: white;
-  background-color: #0070f3;
+  background-color: #4CAF50; /* Green color */
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -34,10 +45,30 @@ body {
 }
 
 .submit-button:hover {
-  background-color: #0051cc;
+  background-color: #a717fa; /* Darker green color on hover */
 }
 
 .response-display {
-  margin-top: 1rem;
-  padding: 0.5rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.response-display p {
+  margin-bottom: 0.5rem;
+}
+
+.response-display strong {
+  font-weight: bold;
+}
+
+.response-display ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.response-display li {
+  margin-bottom: 0.5rem;
 }
