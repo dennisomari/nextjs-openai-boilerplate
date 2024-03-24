@@ -85,6 +85,12 @@ const completion = await openai.createChatCompletion({
 
 > top_p: (number, optional) - This parameter is a part of nucleus sampling, a decoding method used in language models. It determines the minimum number of tokens to consider for generating a completion. A higher value will consider more tokens, increasing the randomness.
 
+##DEMO 
+![Screenshot (266)](https://github.com/dennisomari/nextjs-openai-boilerplate/assets/102676833/17cb8794-0d04-4e3b-a86f-30351f7ef1fa)
+
+
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
