@@ -85,6 +85,12 @@ const completion = await openai.createChatCompletion({
 
 > top_p: (number, optional) - This parameter is a part of nucleus sampling, a decoding method used in language models. It determines the minimum number of tokens to consider for generating a completion. A higher value will consider more tokens, increasing the randomness.
 
+# DEMO 
+(https://name-characteristics-generator.vercel.app/)
+
+
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
