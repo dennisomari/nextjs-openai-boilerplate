@@ -18,7 +18,7 @@ export default async function handler(req, res) {
   const userMessage = req.body.payload || "";
 
   try {
-    const userPrompt = getUserPrompt(userMessage);
+    const userPrompt = userMessage;
     const functions = getFunctions();
     const messages = [userPrompt];
 
